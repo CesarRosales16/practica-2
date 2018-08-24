@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <center>Curriculum Vitae</center>
+        </h1>
+    </header>
+    <section>
+        <form action="index.html" method="POST">
+            <fieldset>
+                <legend>Personal data:</legend>
+                <label for="dui">DUI: </label>
+                <input type="text" name="dui" id="dui" placeholder="048134128" required pattern="[0-9]{8}-[0-9]">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required pattern="[a-zA-Z]{5,25}">
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required pattern="[a-zA-Z]{5,25}">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="gender" value="M" required> M
+                <input type="radio" name="gender" id="gender" value="F" required> F
+                <br>
+                <br>
+                <label for="tel">Contact Number: </label>
+                <input type="tel" name="tel" id="tel" required pattern="[0-9]{8}">
+                <label for="date">Birthdate: </label>
+                <input type="date" name="date" id="date" required>
+                <label for="status"> Civil Status</label>
+                <select>
+                    <option>Single</option>
+                    <option>Taken</option>
+                    <option>Complicated</option>
+                </select>
+                <label for="image"> Image</label>
+                <input type="file" name="image" id="image">
+            </fieldset>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <textarea cols="255" rows="10" placeholder="Experience" required></textarea>
+            </fieldset>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Academic Training</legend>
+                <textarea cols="255" rows="10" placeholder="Academic Training" required></textarea>
+            </fieldset>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Further Training</legend>
+                <fieldset>
+                    <legend>Programming Languages</legend>
+                    <input type="checkbox" name="lan1" id="lan1" value="Java">
+                    <label for="lan1">Java</label>
+                    <input type="checkbox" name="lan2" id="lan2" value="C#">
+                    <label for="lan2">C#</label>
+                    <input type="checkbox" name="lan3" id="lan3" value="Phyton">
+                    <label for="lan3">Python</label>
+                    <input type="checkbox" name="lan4" id="lan4" value="C++">
+                    <label for="lan4">C++</label>
+                    <input type="checkbox" name="lan5" id="lan5" value="Ruby">
+                    <label for="lan5">Ruby</label>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Web Technologies</legend>
+                    <input type="checkbox" name="webTec1" id="webTec1" value="HTML5">
+                    <label for="webTec1">HTML5</label>
+                    <input type="checkbox" name="webTec2" id="webTec2" value="CSS/CSS3">
+                    <label for="webTec2">CSS/CSS3</label>
+                    <input type="checkbox" name="webTec3" id="webTec3" value="materialize Css">
+                    <label for="webTec3">materialize Css</label>
+                    <input type="checkbox" name="webTec4" id="webTec4" value="Javascript">
+                    <label for="webTec4">Javascript</label>
+                    <input type="checkbox" name="webTec5" id="webTec5" value="Node.js">
+                    <label for="webTec5">Node.js</label>
+                    <input type="checkbox" name="webTec6" id="webTec6" value="Spring MVC">
+                    <label for="webTec6">Spring MVC</label>
+                </fieldset>
+            </fieldset>
+            <br>
+            <input type="submit" value="Send">
+            <a href="index.html"> <input type="button" value="Cancel"></a>
+        </form>
+    </section>
+</body>
+
+</html>
